@@ -10,7 +10,7 @@ Tutorial from https://angular.io/tutorial
 - Um componente sempre importa ```Component``` do Angular core library e é anotado com ```@Component``` para especificar os metadados ```selector```, ```templateUrl``` e ```styleUrls``` relativos a si mesmo
     - ```selector``` identifica o seletor CSS e tem o mesmo nome do HTML que identifica o componente dentro do template do seu parente
     - ```templateUrl``` identifica a localização do arquivo de template
-    - ```styleUrls``` identifica a localização da folha de estilos de uso privado
+    - ```styleUrls``` identifica a localização da folha de estilos de uso privado (pode ser usada a diretiva @Component.styles para definir um array de estilos)
     
 - ```NgOnInit()``` é um método invocado logo após a construção do componente e é útil para inicialização de dados, tal como uma requisição a servidor remoto, por exemplo (**O construtor não deve ser usado para esse fim, mas apenas para inicializar variáveis simples**). ```NgOnInit()``` é invocado uma vez só, enquanto o ```NgOnChanges``` é invocado uma vez antes do ```NgOnInit()``` e diversas vezes depois.
 
@@ -21,3 +21,9 @@ Tutorial from https://angular.io/tutorial
 - O operador pipe ```|``` é útil para formatar strings, dinheiro, datas, etc. antes de exibi-los. O Angular já vem com opções predefinidas, mas é possível criar outras também
 
 - O two way binding do Angular é viabilizado pelo operador ```[(ngModel)]```, pertencente ao módulo ```FormsModule```, aplicado na tag HTML
+
+- **```*ngFor``` é o operador de iteração do Angular e serve para percorrer conjuntos de objetos no HTML do componente**
+
+- **O event binder do Angular é feito colocando o nome do evento entre parênteses na tag HTML**
+
+- **```*ngIf``` é o operador condicional do Angular para uso no HTML do componente**
