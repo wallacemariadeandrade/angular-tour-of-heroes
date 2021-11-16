@@ -27,3 +27,5 @@ Tutorial from https://angular.io/tutorial
 - **O event binder do Angular é feito colocando o nome do evento entre parênteses na tag HTML**
 
 - **```*ngIf``` é o operador condicional do Angular para uso no HTML do componente**
+
+- **```[]``` é o operador utilizado para property binding**
