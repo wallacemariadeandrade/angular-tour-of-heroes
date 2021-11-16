@@ -29,3 +29,7 @@ Tutorial from https://angular.io/tutorial
 - **```*ngIf``` é o operador condicional do Angular para uso no HTML do componente**
 
 - **```[]``` é o operador utilizado para property binding**
+
+- O Angular tem um container DI nativo e os serviços são associados a ele por meio da diretiva ```@Injectable``` aplicada na classe
+
+- Operações assíncronas retornam um Observable de algo
