@@ -33,3 +33,15 @@ Tutorial from https://angular.io/tutorial
 - O Angular tem um container DI nativo e os serviços são associados a ele por meio da diretiva ```@Injectable``` aplicada na classe
 
 - Operações assíncronas retornam um Observable de algo
+
+- O roteamento é feito pelo ```AppRoutingModule```, que deve ser importado para o ```AppModule```.
+
+- Uma rota em Angular tipicamente possui duas propriedades: string que determina o caminho e o componente a ser criado quando se navega para a rota em questão.
+
+- O ```RouterOutlet``` instrui o roteador sobre qual view exibir
+
+- O ```routerLink``` é um atributo que pode ser aplicado na parte HTML para funcionar como o href, de maneira a indicar a navegação. É o seletor do módulo ```RouterLink```
+
+- ```ActivatedRoute``` é o serviço que armazena informações da rota em questão e pode ser consumido via construtor
+
+- ```Location``` é um serviço para interação com o browser e pode ser consumido via construtor
