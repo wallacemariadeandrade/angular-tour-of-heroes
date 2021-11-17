@@ -32,7 +32,7 @@ Tutorial from https://angular.io/tutorial
 
 - O Angular tem um container DI nativo e os serviços são associados a ele por meio da diretiva ```@Injectable``` aplicada na classe
 
-- Operações assíncronas retornam um Observable de algo
+- **Operações assíncronas retornam um ```Observable``` de algo! Sempre se deve fazer o ```subscribe()``` de um ```Observable```, caso contrário a requisição não será enviada!**
 
 - O roteamento é feito pelo ```AppRoutingModule```, que deve ser importado para o ```AppModule```.
 
@@ -45,3 +45,13 @@ Tutorial from https://angular.io/tutorial
 - ```ActivatedRoute``` é o serviço que armazena informações da rota em questão e pode ser consumido via construtor
 
 - ```Location``` é um serviço para interação com o browser e pode ser consumido via construtor
+
+- ```HttpClient``` é o serviço do Angular para comunicação via HTTP e pertence ao módulo . ```HttpClientModule```.  Seu método ```get()``` por padrão, admite que a resposta da requisição será um JSON.
+
+- RxJS ```catchError()``` é um operador para interceptar o ```Observable``` com erro!
+
+- RxJS ```tap()``` é um operador para interceptar o ```Observable``` e fazer algo com seu conteúdo, porém sem alterá-os!
+
+- Ao iterar sobre um ```Observable``` usa-se o pipe ```async``` para processamento dos dados!
+
+- ```Subject``` é um ```Observable``` que funciona semelhante a um stream de dados que permite leitura e escrita
